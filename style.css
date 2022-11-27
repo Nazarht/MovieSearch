@@ -44,7 +44,7 @@ main h1 {
     line-height: 25px;
     height: 35px;
     cursor: pointer;
-    
+    margin: 10px;
 }
 
 .button span {
@@ -56,7 +56,7 @@ main h1 {
 
 
 .movie-box {
-    height: 100vh;
+    height: 90vh;
     width: 80%;
     margin: 20px auto;
     display: flex;
@@ -66,16 +66,32 @@ main h1 {
 }
 
 .movie-box img {
-    height: 50vmax;
+    width: 50%;
     margin: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .movie-box img {
-        width: 80%;
+        width: 70%;
+        height: auto;
         margin: 20px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .movie-box{
+        margin: 5px auto;
+        width: 90%;
+    }
+
+    .movie-box img {
+        width: 80%;
+        height: auto;
+        margin: 20px;
+    }
+}
+
+
 
 .movie-box h2 {
     font-size: 2rem;

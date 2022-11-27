@@ -89,6 +89,7 @@ async function makeVisual() {
     movieImgDOM.attributes.src.value = movieImg;
     movieNameDOM.innerHTML = movieName;
     movieTextDOM.innerHTML = movieText;
+    movieBox.style.height = 'fit-content'
 }
 
 
