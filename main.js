@@ -5,6 +5,7 @@ const movieBox = document.querySelector('.movie-box');
 const movieImgDOM = document.querySelector('.movie-img');
 const movieNameDOM = document.querySelector('.movie-name');
 const movieTextDOM = document.querySelector('.movie-description');
+const movieYearDOM = document.querySelector('.movie-year')
 
 
 
@@ -85,11 +86,14 @@ async function makeVisual() {
     const movieName = movie.title;
     const movieText = movie.overview;
     const movieImg = `https://image.tmdb.org/t/p/original${movie['poster_path']}`;
+    const movieYear = movie['release_date'];
+    console.log(movieYear)
 
     movieImgDOM.attributes.src.value = movieImg;
     movieNameDOM.innerHTML = movieName;
     movieTextDOM.innerHTML = movieText;
     movieBox.style.height = 'fit-content'
+    movieYearDOM.innerHTML = movieYear.slice(0,4);
 }
 
 
